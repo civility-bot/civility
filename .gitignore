@@ -1,0 +1,14 @@
+# Ignore Build Files
+coverage
+dist
+node_modules
+
+# Ignore system-created files
+npm-debug.log
+.DS_Store
+.Spotlight-V100
+.Trashes
+.vscode
+.next
+._*
+**/*.log
