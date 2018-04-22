@@ -1,6 +1,9 @@
 {
-  "allowJs": false,
-  "declaration": true,
+  "compilerOptions": {
+    "allowJs": false,
+    "declaration": true,
+    "jsx": "react"
+  },
   "extends": "../../tsconfig",
   "include": [
     "./source/index.ts"
