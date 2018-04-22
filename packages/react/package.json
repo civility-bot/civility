@@ -1,6 +1,6 @@
 {
   "name": "@civility/react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Civility React Components",
   "main": "./dist/index.js",
   "license": "UNLICENSED",
@@ -19,5 +19,8 @@
   "devDependencies": {
     "npm-run-all": "^4.1.2",
     "typescript": "^2.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
