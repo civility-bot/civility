@@ -1,6 +1,6 @@
 {
   "name": "@civility/utilities",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Contains Civility stylesheets",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,9 +10,6 @@
     "build": "run-p build:* --aggregate-output",
     "build:commonjs": "tsc -p 'tsconfig.json' --outDir 'dist' --module 'commonjs'",
     "start": "npm run build:commonjs -- --watch"
-  },
-  "dependencies": {
-    "lodash-es": "^4.17.10"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2",

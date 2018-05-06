@@ -36,6 +36,14 @@ exports[`isArray 17`] = `"isArray(Error: hello): false"`;
 
 exports[`isArray 18`] = `"isArray(NaN): false"`;
 
+exports[`isArray 19`] = `"isArray(-2174774400000): false"`;
+
+exports[`isArray 20`] = `"isArray([object Promise]): false"`;
+
+exports[`isArray 21`] = `"isArray([object Set]): false"`;
+
+exports[`isArray 22`] = `"isArray([object Map]): false"`;
+
 exports[`isBoolean 1`] = `"isBoolean(s): false"`;
 
 exports[`isBoolean 2`] = `"isBoolean(0): false"`;
@@ -71,6 +79,14 @@ exports[`isBoolean 16`] = `"isBoolean(9007199254740992): false"`;
 exports[`isBoolean 17`] = `"isBoolean(Error: hello): false"`;
 
 exports[`isBoolean 18`] = `"isBoolean(NaN): false"`;
+
+exports[`isBoolean 19`] = `"isBoolean(-2174774400000): false"`;
+
+exports[`isBoolean 20`] = `"isBoolean([object Promise]): false"`;
+
+exports[`isBoolean 21`] = `"isBoolean([object Set]): false"`;
+
+exports[`isBoolean 22`] = `"isBoolean([object Map]): false"`;
 
 exports[`isDate 1`] = `"isDate(s): false"`;
 
@@ -108,6 +124,14 @@ exports[`isDate 17`] = `"isDate(Error: hello): false"`;
 
 exports[`isDate 18`] = `"isDate(NaN): false"`;
 
+exports[`isDate 19`] = `"isDate(-2174774400000): false"`;
+
+exports[`isDate 20`] = `"isDate([object Promise]): false"`;
+
+exports[`isDate 21`] = `"isDate([object Set]): false"`;
+
+exports[`isDate 22`] = `"isDate([object Map]): false"`;
+
 exports[`isEmpty 1`] = `"isEmpty(s): false"`;
 
 exports[`isEmpty 2`] = `"isEmpty(0): true"`;
@@ -143,6 +167,14 @@ exports[`isEmpty 16`] = `"isEmpty(9007199254740992): true"`;
 exports[`isEmpty 17`] = `"isEmpty(Error: hello): true"`;
 
 exports[`isEmpty 18`] = `"isEmpty(NaN): true"`;
+
+exports[`isEmpty 19`] = `"isEmpty(-2174774400000): true"`;
+
+exports[`isEmpty 20`] = `"isEmpty([object Promise]): true"`;
+
+exports[`isEmpty 21`] = `"isEmpty([object Set]): true"`;
+
+exports[`isEmpty 22`] = `"isEmpty([object Map]): true"`;
 
 exports[`isError 1`] = `"isError(s): false"`;
 
@@ -180,41 +212,13 @@ exports[`isError 17`] = `"isError(Error: hello): true"`;
 
 exports[`isError 18`] = `"isError(NaN): false"`;
 
-exports[`isFinite 1`] = `"isFinite(s): false"`;
+exports[`isError 19`] = `"isError(-2174774400000): false"`;
 
-exports[`isFinite 2`] = `"isFinite(0): true"`;
+exports[`isError 20`] = `"isError([object Promise]): false"`;
 
-exports[`isFinite 3`] = `"isFinite(1): true"`;
+exports[`isError 21`] = `"isError([object Set]): false"`;
 
-exports[`isFinite 4`] = `"isFinite(1): false"`;
-
-exports[`isFinite 5`] = `"isFinite(Infinity): false"`;
-
-exports[`isFinite 6`] = `"isFinite(null): false"`;
-
-exports[`isFinite 7`] = `"isFinite(undefined): false"`;
-
-exports[`isFinite 8`] = `"isFinite(): false"`;
-
-exports[`isFinite 9`] = `"isFinite(1): false"`;
-
-exports[`isFinite 10`] = `"isFinite([object Object]): false"`;
-
-exports[`isFinite 11`] = `"isFinite([object Object]): false"`;
-
-exports[`isFinite 12`] = `"isFinite(function Number() { [native code] }): false"`;
-
-exports[`isFinite 13`] = `"isFinite(/fsdf/): false"`;
-
-exports[`isFinite 14`] = `"isFinite(/fsdf/): false"`;
-
-exports[`isFinite 15`] = `"isFinite(1.5234): true"`;
-
-exports[`isFinite 16`] = `"isFinite(9007199254740992): true"`;
-
-exports[`isFinite 17`] = `"isFinite(Error: hello): false"`;
-
-exports[`isFinite 18`] = `"isFinite(NaN): false"`;
+exports[`isError 22`] = `"isError([object Map]): false"`;
 
 exports[`isFunction 1`] = `"isFunction(s): false"`;
 
@@ -252,77 +256,57 @@ exports[`isFunction 17`] = `"isFunction(Error: hello): false"`;
 
 exports[`isFunction 18`] = `"isFunction(NaN): false"`;
 
-exports[`isInteger 1`] = `"isInteger(s): false"`;
+exports[`isFunction 19`] = `"isFunction(-2174774400000): false"`;
 
-exports[`isInteger 2`] = `"isInteger(0): true"`;
+exports[`isFunction 20`] = `"isFunction([object Promise]): false"`;
 
-exports[`isInteger 3`] = `"isInteger(1): true"`;
+exports[`isFunction 21`] = `"isFunction([object Set]): false"`;
 
-exports[`isInteger 4`] = `"isInteger(1): false"`;
+exports[`isFunction 22`] = `"isFunction([object Map]): false"`;
 
-exports[`isInteger 5`] = `"isInteger(Infinity): false"`;
+exports[`isMap 1`] = `"isMap(s): false"`;
 
-exports[`isInteger 6`] = `"isInteger(null): false"`;
+exports[`isMap 2`] = `"isMap(0): false"`;
 
-exports[`isInteger 7`] = `"isInteger(undefined): false"`;
+exports[`isMap 3`] = `"isMap(1): false"`;
 
-exports[`isInteger 8`] = `"isInteger(): false"`;
+exports[`isMap 4`] = `"isMap(1): false"`;
 
-exports[`isInteger 9`] = `"isInteger(1): false"`;
+exports[`isMap 5`] = `"isMap(Infinity): false"`;
 
-exports[`isInteger 10`] = `"isInteger([object Object]): false"`;
+exports[`isMap 6`] = `"isMap(null): false"`;
 
-exports[`isInteger 11`] = `"isInteger([object Object]): false"`;
+exports[`isMap 7`] = `"isMap(undefined): false"`;
 
-exports[`isInteger 12`] = `"isInteger(function Number() { [native code] }): false"`;
+exports[`isMap 8`] = `"isMap(): false"`;
 
-exports[`isInteger 13`] = `"isInteger(/fsdf/): false"`;
+exports[`isMap 9`] = `"isMap(1): false"`;
 
-exports[`isInteger 14`] = `"isInteger(/fsdf/): false"`;
+exports[`isMap 10`] = `"isMap([object Object]): false"`;
 
-exports[`isInteger 15`] = `"isInteger(1.5234): false"`;
+exports[`isMap 11`] = `"isMap([object Object]): false"`;
 
-exports[`isInteger 16`] = `"isInteger(9007199254740992): true"`;
+exports[`isMap 12`] = `"isMap(function Number() { [native code] }): false"`;
 
-exports[`isInteger 17`] = `"isInteger(Error: hello): false"`;
+exports[`isMap 13`] = `"isMap(/fsdf/): false"`;
 
-exports[`isInteger 18`] = `"isInteger(NaN): false"`;
+exports[`isMap 14`] = `"isMap(/fsdf/): false"`;
 
-exports[`isLength 1`] = `"isLength(s): false"`;
+exports[`isMap 15`] = `"isMap(1.5234): false"`;
 
-exports[`isLength 2`] = `"isLength(0): true"`;
+exports[`isMap 16`] = `"isMap(9007199254740992): false"`;
 
-exports[`isLength 3`] = `"isLength(1): true"`;
+exports[`isMap 17`] = `"isMap(Error: hello): false"`;
 
-exports[`isLength 4`] = `"isLength(1): false"`;
+exports[`isMap 18`] = `"isMap(NaN): false"`;
 
-exports[`isLength 5`] = `"isLength(Infinity): false"`;
+exports[`isMap 19`] = `"isMap(-2174774400000): false"`;
 
-exports[`isLength 6`] = `"isLength(null): false"`;
+exports[`isMap 20`] = `"isMap([object Promise]): false"`;
 
-exports[`isLength 7`] = `"isLength(undefined): false"`;
+exports[`isMap 21`] = `"isMap([object Set]): false"`;
 
-exports[`isLength 8`] = `"isLength(): false"`;
-
-exports[`isLength 9`] = `"isLength(1): false"`;
-
-exports[`isLength 10`] = `"isLength([object Object]): false"`;
-
-exports[`isLength 11`] = `"isLength([object Object]): false"`;
-
-exports[`isLength 12`] = `"isLength(function Number() { [native code] }): false"`;
-
-exports[`isLength 13`] = `"isLength(/fsdf/): false"`;
-
-exports[`isLength 14`] = `"isLength(/fsdf/): false"`;
-
-exports[`isLength 15`] = `"isLength(1.5234): false"`;
-
-exports[`isLength 16`] = `"isLength(9007199254740992): false"`;
-
-exports[`isLength 17`] = `"isLength(Error: hello): false"`;
-
-exports[`isLength 18`] = `"isLength(NaN): false"`;
+exports[`isMap 22`] = `"isMap([object Map]): true"`;
 
 exports[`isNil 1`] = `"isNil(s): false"`;
 
@@ -360,6 +344,14 @@ exports[`isNil 17`] = `"isNil(Error: hello): false"`;
 
 exports[`isNil 18`] = `"isNil(NaN): false"`;
 
+exports[`isNil 19`] = `"isNil(-2174774400000): false"`;
+
+exports[`isNil 20`] = `"isNil([object Promise]): false"`;
+
+exports[`isNil 21`] = `"isNil([object Set]): false"`;
+
+exports[`isNil 22`] = `"isNil([object Map]): false"`;
+
 exports[`isNull 1`] = `"isNull(s): false"`;
 
 exports[`isNull 2`] = `"isNull(0): false"`;
@@ -395,6 +387,14 @@ exports[`isNull 16`] = `"isNull(9007199254740992): false"`;
 exports[`isNull 17`] = `"isNull(Error: hello): false"`;
 
 exports[`isNull 18`] = `"isNull(NaN): false"`;
+
+exports[`isNull 19`] = `"isNull(-2174774400000): false"`;
+
+exports[`isNull 20`] = `"isNull([object Promise]): false"`;
+
+exports[`isNull 21`] = `"isNull([object Set]): false"`;
+
+exports[`isNull 22`] = `"isNull([object Map]): false"`;
 
 exports[`isNumber 1`] = `"isNumber(s): false"`;
 
@@ -432,6 +432,14 @@ exports[`isNumber 17`] = `"isNumber(Error: hello): false"`;
 
 exports[`isNumber 18`] = `"isNumber(NaN): true"`;
 
+exports[`isNumber 19`] = `"isNumber(-2174774400000): true"`;
+
+exports[`isNumber 20`] = `"isNumber([object Promise]): false"`;
+
+exports[`isNumber 21`] = `"isNumber([object Set]): false"`;
+
+exports[`isNumber 22`] = `"isNumber([object Map]): false"`;
+
 exports[`isObject 1`] = `"isObject(s): false"`;
 
 exports[`isObject 2`] = `"isObject(0): false"`;
@@ -468,41 +476,57 @@ exports[`isObject 17`] = `"isObject(Error: hello): true"`;
 
 exports[`isObject 18`] = `"isObject(NaN): false"`;
 
-exports[`isPlainObject 1`] = `"isPlainObject(s): false"`;
+exports[`isObject 19`] = `"isObject(-2174774400000): false"`;
 
-exports[`isPlainObject 2`] = `"isPlainObject(0): false"`;
+exports[`isObject 20`] = `"isObject([object Promise]): true"`;
 
-exports[`isPlainObject 3`] = `"isPlainObject(1): false"`;
+exports[`isObject 21`] = `"isObject([object Set]): true"`;
 
-exports[`isPlainObject 4`] = `"isPlainObject(1): false"`;
+exports[`isObject 22`] = `"isObject([object Map]): true"`;
 
-exports[`isPlainObject 5`] = `"isPlainObject(Infinity): false"`;
+exports[`isPromise 1`] = `"isPromise(s): false"`;
 
-exports[`isPlainObject 6`] = `"isPlainObject(null): false"`;
+exports[`isPromise 2`] = `"isPromise(0): false"`;
 
-exports[`isPlainObject 7`] = `"isPlainObject(undefined): false"`;
+exports[`isPromise 3`] = `"isPromise(1): false"`;
 
-exports[`isPlainObject 8`] = `"isPlainObject(): false"`;
+exports[`isPromise 4`] = `"isPromise(1): false"`;
 
-exports[`isPlainObject 9`] = `"isPlainObject(1): false"`;
+exports[`isPromise 5`] = `"isPromise(Infinity): false"`;
 
-exports[`isPlainObject 10`] = `"isPlainObject([object Object]): true"`;
+exports[`isPromise 6`] = `"isPromise(null): false"`;
 
-exports[`isPlainObject 11`] = `"isPlainObject([object Object]): true"`;
+exports[`isPromise 7`] = `"isPromise(undefined): false"`;
 
-exports[`isPlainObject 12`] = `"isPlainObject(function Number() { [native code] }): false"`;
+exports[`isPromise 8`] = `"isPromise(): false"`;
 
-exports[`isPlainObject 13`] = `"isPlainObject(/fsdf/): false"`;
+exports[`isPromise 9`] = `"isPromise(1): false"`;
 
-exports[`isPlainObject 14`] = `"isPlainObject(/fsdf/): false"`;
+exports[`isPromise 10`] = `"isPromise([object Object]): false"`;
 
-exports[`isPlainObject 15`] = `"isPlainObject(1.5234): false"`;
+exports[`isPromise 11`] = `"isPromise([object Object]): false"`;
 
-exports[`isPlainObject 16`] = `"isPlainObject(9007199254740992): false"`;
+exports[`isPromise 12`] = `"isPromise(function Number() { [native code] }): false"`;
 
-exports[`isPlainObject 17`] = `"isPlainObject(Error: hello): false"`;
+exports[`isPromise 13`] = `"isPromise(/fsdf/): false"`;
 
-exports[`isPlainObject 18`] = `"isPlainObject(NaN): false"`;
+exports[`isPromise 14`] = `"isPromise(/fsdf/): false"`;
+
+exports[`isPromise 15`] = `"isPromise(1.5234): false"`;
+
+exports[`isPromise 16`] = `"isPromise(9007199254740992): false"`;
+
+exports[`isPromise 17`] = `"isPromise(Error: hello): false"`;
+
+exports[`isPromise 18`] = `"isPromise(NaN): false"`;
+
+exports[`isPromise 19`] = `"isPromise(-2174774400000): false"`;
+
+exports[`isPromise 20`] = `"isPromise([object Promise]): true"`;
+
+exports[`isPromise 21`] = `"isPromise([object Set]): false"`;
+
+exports[`isPromise 22`] = `"isPromise([object Map]): false"`;
 
 exports[`isRegExp 1`] = `"isRegExp(s): false"`;
 
@@ -540,41 +564,57 @@ exports[`isRegExp 17`] = `"isRegExp(Error: hello): false"`;
 
 exports[`isRegExp 18`] = `"isRegExp(NaN): false"`;
 
-exports[`isSafeInteger 1`] = `"isSafeInteger(s): false"`;
+exports[`isRegExp 19`] = `"isRegExp(-2174774400000): false"`;
 
-exports[`isSafeInteger 2`] = `"isSafeInteger(0): true"`;
+exports[`isRegExp 20`] = `"isRegExp([object Promise]): false"`;
 
-exports[`isSafeInteger 3`] = `"isSafeInteger(1): true"`;
+exports[`isRegExp 21`] = `"isRegExp([object Set]): false"`;
 
-exports[`isSafeInteger 4`] = `"isSafeInteger(1): false"`;
+exports[`isRegExp 22`] = `"isRegExp([object Map]): false"`;
 
-exports[`isSafeInteger 5`] = `"isSafeInteger(Infinity): false"`;
+exports[`isSet 1`] = `"isSet(s): false"`;
 
-exports[`isSafeInteger 6`] = `"isSafeInteger(null): false"`;
+exports[`isSet 2`] = `"isSet(0): false"`;
 
-exports[`isSafeInteger 7`] = `"isSafeInteger(undefined): false"`;
+exports[`isSet 3`] = `"isSet(1): false"`;
 
-exports[`isSafeInteger 8`] = `"isSafeInteger(): false"`;
+exports[`isSet 4`] = `"isSet(1): false"`;
 
-exports[`isSafeInteger 9`] = `"isSafeInteger(1): false"`;
+exports[`isSet 5`] = `"isSet(Infinity): false"`;
 
-exports[`isSafeInteger 10`] = `"isSafeInteger([object Object]): false"`;
+exports[`isSet 6`] = `"isSet(null): false"`;
 
-exports[`isSafeInteger 11`] = `"isSafeInteger([object Object]): false"`;
+exports[`isSet 7`] = `"isSet(undefined): false"`;
 
-exports[`isSafeInteger 12`] = `"isSafeInteger(function Number() { [native code] }): false"`;
+exports[`isSet 8`] = `"isSet(): false"`;
 
-exports[`isSafeInteger 13`] = `"isSafeInteger(/fsdf/): false"`;
+exports[`isSet 9`] = `"isSet(1): false"`;
 
-exports[`isSafeInteger 14`] = `"isSafeInteger(/fsdf/): false"`;
+exports[`isSet 10`] = `"isSet([object Object]): false"`;
 
-exports[`isSafeInteger 15`] = `"isSafeInteger(1.5234): false"`;
+exports[`isSet 11`] = `"isSet([object Object]): false"`;
 
-exports[`isSafeInteger 16`] = `"isSafeInteger(9007199254740992): false"`;
+exports[`isSet 12`] = `"isSet(function Number() { [native code] }): false"`;
 
-exports[`isSafeInteger 17`] = `"isSafeInteger(Error: hello): false"`;
+exports[`isSet 13`] = `"isSet(/fsdf/): false"`;
 
-exports[`isSafeInteger 18`] = `"isSafeInteger(NaN): false"`;
+exports[`isSet 14`] = `"isSet(/fsdf/): false"`;
+
+exports[`isSet 15`] = `"isSet(1.5234): false"`;
+
+exports[`isSet 16`] = `"isSet(9007199254740992): false"`;
+
+exports[`isSet 17`] = `"isSet(Error: hello): false"`;
+
+exports[`isSet 18`] = `"isSet(NaN): false"`;
+
+exports[`isSet 19`] = `"isSet(-2174774400000): false"`;
+
+exports[`isSet 20`] = `"isSet([object Promise]): false"`;
+
+exports[`isSet 21`] = `"isSet([object Set]): true"`;
+
+exports[`isSet 22`] = `"isSet([object Map]): false"`;
 
 exports[`isString 1`] = `"isString(s): true"`;
 
@@ -612,41 +652,13 @@ exports[`isString 17`] = `"isString(Error: hello): false"`;
 
 exports[`isString 18`] = `"isString(NaN): false"`;
 
-exports[`isTypedArray 1`] = `"isTypedArray(s): false"`;
+exports[`isString 19`] = `"isString(-2174774400000): false"`;
 
-exports[`isTypedArray 2`] = `"isTypedArray(0): false"`;
+exports[`isString 20`] = `"isString([object Promise]): false"`;
 
-exports[`isTypedArray 3`] = `"isTypedArray(1): false"`;
+exports[`isString 21`] = `"isString([object Set]): false"`;
 
-exports[`isTypedArray 4`] = `"isTypedArray(1): false"`;
-
-exports[`isTypedArray 5`] = `"isTypedArray(Infinity): false"`;
-
-exports[`isTypedArray 6`] = `"isTypedArray(null): false"`;
-
-exports[`isTypedArray 7`] = `"isTypedArray(undefined): false"`;
-
-exports[`isTypedArray 8`] = `"isTypedArray(): false"`;
-
-exports[`isTypedArray 9`] = `"isTypedArray(1): false"`;
-
-exports[`isTypedArray 10`] = `"isTypedArray([object Object]): false"`;
-
-exports[`isTypedArray 11`] = `"isTypedArray([object Object]): false"`;
-
-exports[`isTypedArray 12`] = `"isTypedArray(function Number() { [native code] }): false"`;
-
-exports[`isTypedArray 13`] = `"isTypedArray(/fsdf/): false"`;
-
-exports[`isTypedArray 14`] = `"isTypedArray(/fsdf/): false"`;
-
-exports[`isTypedArray 15`] = `"isTypedArray(1.5234): false"`;
-
-exports[`isTypedArray 16`] = `"isTypedArray(9007199254740992): false"`;
-
-exports[`isTypedArray 17`] = `"isTypedArray(Error: hello): false"`;
-
-exports[`isTypedArray 18`] = `"isTypedArray(NaN): false"`;
+exports[`isString 22`] = `"isString([object Map]): false"`;
 
 exports[`isUndefined 1`] = `"isUndefined(s): false"`;
 
@@ -683,3 +695,11 @@ exports[`isUndefined 16`] = `"isUndefined(9007199254740992): false"`;
 exports[`isUndefined 17`] = `"isUndefined(Error: hello): false"`;
 
 exports[`isUndefined 18`] = `"isUndefined(NaN): false"`;
+
+exports[`isUndefined 19`] = `"isUndefined(-2174774400000): false"`;
+
+exports[`isUndefined 20`] = `"isUndefined([object Promise]): false"`;
+
+exports[`isUndefined 21`] = `"isUndefined([object Set]): false"`;
+
+exports[`isUndefined 22`] = `"isUndefined([object Map]): false"`;
