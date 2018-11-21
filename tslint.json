@@ -34,7 +34,6 @@
     "no-submodule-imports": false,
     "no-trailing-whitespace": true,
     "no-unnecessary-callback-wrapper": true,
-    "no-unused-variable": true,
     "no-var-requires": false,
     "object-literal-sort-keys": [ true, "ignore-case", "shorthand-first" ],
     "ordered-imports": true,
@@ -42,8 +41,13 @@
     "prefer-function-over-method": true,
     "prefer-readonly": true,
     "quotemark": [ true, "double", "jsx-double", "avoid-template" ],
-    "semicolon": [false, "never" ],
-    "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
+    "semicolon": [ true, "never" ],
+    "trailing-comma": [ true, {
+      "multiline": "always",
+      "singleline": "never",
+      "esSpecCompliant": true
+    }],
+    "variable-name": false,
     "whitespace": [
       true,
       "check-branch",

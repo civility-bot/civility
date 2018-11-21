@@ -1,35 +1,24 @@
-import { Func } from "@civility/utilities";
+import { Func, isObject, isString } from "@civility/utilities"
+
 
 export interface IAction<ActionType> {
-  readonly type: ActionType;
+  readonly type: ActionType
+  readonly [key: string]: any
 }
 
-export interface IApiAction<PayloadType> {
-  readonly callAPI?: (...args: any[]) => PromiseLike<any>;
-  readonly payload: PayloadType;
-  readonly shouldCallAPI?: (...args: any[]) => boolean;
-  readonly types: [ ActionType, ActionType, ActionType ];
+export interface IPayloadAction<ActionType> {
+  readonly type: ActionType
+  readonly payload: { [key: string]: any }
 }
 
-export type IAsyncAction<PayloadType> = IApiAction<PayloadType> | Func;
-
-export type ActionCreator = (...args: any[]) => ActionTypes;
-
-
-// ACTION TYPES
-// ––––––––––––
-import {
-  CreateOverlay,
-  DeleteOverlay,
-} from "./overlayActionCreators/overlayActionCreators";
-
-export enum ActionType {
-  CREATE_OVERLAY = "CREATE_OVERLAY",
-  DELETE_OVERLAY = "DELETE_OVERLAY",
-  OTHER = "__any_other_action_type__",
+export interface IAPIAction<ActionType, PayloadType> {
+  readonly payload: PayloadType
+  readonly shouldCallAPI?: (...args: any[]) => boolean
+  readonly type: ActionType
 }
 
-export type ActionTypes =
-  | CreateOverlay
-  | DeleteOverlay
-  | IAction<ActionType.OTHER>;
+export type IAsyncAction<PayloadType> = IAPIAction<string, PayloadType> | Func
+
+export function isAction(item: any): item is IAction<any> {
+  return isObject(item) && isString(item.type)
+}

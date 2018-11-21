@@ -1,6 +1,6 @@
 {
   "name": "@civility/react",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Civility React Components",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,13 +12,13 @@
     "start": "npm run build:commonjs -- --watch"
   },
   "dependencies": {
-    "@civility/utilities": "^0.0.6",
+    "@civility/utilities": "^0.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.2",
-    "typescript": "^2.8.3"
+    "typescript": "^3.1.6"
   },
   "publishConfig": {
     "access": "public"

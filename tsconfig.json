@@ -11,6 +11,7 @@
       "scripthost"
     ],
     "noImplicitAny": true,
+    "noUnusedLocals": true,
     "paths": {
       "*": [
         "node_modules/*",
@@ -28,5 +29,7 @@
     "**/*.test.js",
     "**/*.test.jsx"
   ],
-  "include": [ "./packages/**/*" ]
+  "include": [
+    "./packages/**/*"
+  ]
 }
