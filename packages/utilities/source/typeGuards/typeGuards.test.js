@@ -1,4 +1,4 @@
-import { forEach } from "../index"
+import { forEach } from ".."
 import * as typeGuards from "./typeGuards"
 
 
@@ -14,4 +14,9 @@ forEach(typeGuards, check => {
       expect(`${check.name}(${item}): ${check(item)}`).toMatchSnapshot()
     })
   })
+})
+
+test("isClient returns true if window is available", () => {
+  global.window = {}
+  expect(typeGuards.isClient()).toBe(true)
 })
