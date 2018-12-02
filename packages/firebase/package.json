@@ -1,6 +1,6 @@
 {
   "name": "@civility/firebase",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Civility Firebase",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
