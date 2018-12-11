@@ -1,7 +1,7 @@
 import { Func } from ".."
 
 
-export function promisify(toPromisify: Func): () => Promise<any> {
+export function promisify(toPromisify: Func): (...args: any[]) => Promise<any | void> {
   return (...args: any[]) => new Promise((resolve: Func, reject: Func) => {
       toPromisify.apply(null, args.concat(newCallback))
 
