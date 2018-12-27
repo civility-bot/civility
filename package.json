@@ -4,30 +4,39 @@
   "author": "Ben Pevsner",
   "main": "index.js",
   "license": "MIT",
+  "private": true,
   "description": "A library for making websites and applications",
   "homepage": "https://github.com/ivebencrazy/civility#readme",
   "bugs": "https://github.com/ivebencrazy/civility/issues",
   "repository": "git+https://github.com/ivebencrazy/civility.git",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "default": "lerna bootstrap --ci && npm run build && npm run test:lint && npm run test:ci",
+    "cleanup": "lerna clean --yes && rm -rf ./node_modules",
+    "default": "lerna bootstrap --ci && yarn build && yarn test:lint && yarn test:ci",
+    "lerna": "lerna",
     "prestart": "lerna run link",
+    "publish": "lerna publish",
     "start": "lerna run start --parallel",
     "test": "run-p --aggregate-output test:lint test:unit",
-    "test:coverage": "npm run test:unit -- --coverage",
+    "test:coverage": "yarn test:unit -- --coverage",
     "test:ci": "jest --env=jsdom --colors --ci --maxWorkers=1",
     "test:lint": "tslint --project ./tsconfig.json",
     "test:unit": "jest --env=jsdom --colors",
     "test:watch": "jest --env=jsdom --colors --watch"
   },
   "dependencies": {
-    "@civility/utilities": "0.1.0",
+    "@civility/utilities": "^0.1.4",
     "basscss": "^8.0.10",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "redux": "^4.0.1"
   },
   "devDependencies": {
+    "@firebase/app-types": "^0.3.2",
     "@types/enzyme": "^3.1.15",
     "@types/jest": "^23.3.10",
     "@types/react": "^16.7.11",
