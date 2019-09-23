@@ -1,6 +1,6 @@
 {
   "name": "@civility/stylesheets",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Contains Civility stylesheets",
   "main": "dist/index.css",
   "style": "dist/index.css",

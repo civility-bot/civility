@@ -1,6 +1,6 @@
 {
   "name": "react-sandbox",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Develop and test Civility React Components",
   "main": ".storybook/config.js",
   "repository": "https://github.com/ivebencrazy/civility",
