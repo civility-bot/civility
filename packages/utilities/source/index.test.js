@@ -1,4 +1,4 @@
-import * as utilities from "./index"
+import * as utilities from "."
 
 
 test("Should export public API", () => {

@@ -26,7 +26,7 @@
     "test": "run-p --aggregate-output test:lint test:unit",
     "test:coverage": "yarn test:unit -- --coverage",
     "test:ci": "jest --env=jsdom --colors --ci --maxWorkers=1",
-    "test:lint": "tslint --project ./tsconfig.json",
+    "test:lint": "tslint --project ./tsconfig.json --fix",
     "test:unit": "jest --env=jsdom --colors",
     "test:watch": "jest --env=jsdom --colors --watch"
   },
